@@ -1,0 +1,7 @@
+## Python requirements for using the resident application.
+##
+##    pip install --requirement=requirements.txt
+##
+PyYAML>=3.11
+beautifulsoup4>=4.6.0
+requests

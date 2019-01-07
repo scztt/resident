@@ -1,0 +1,4 @@
+## Runtime configuration for the resident application.
+##
+core:
+  logging: WARN
