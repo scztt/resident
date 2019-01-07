@@ -32,8 +32,13 @@ _CONFIG = {
     "package_dir": {"": "src"},
     "packages": find_packages("src"),
     "entry_points": {
-        "console_scripts": ("cli = resident.cli:main",),
+        "console_scripts": ("resident = resident.cli:main")
     },
+    "install_requires": [
+        "PyYAML>=3.11",
+        "beautifulsoup4>=4.6.0",
+        "requests"
+    ],
     "data_files": list(chain.from_iterable(_listdir(root) for root in _DATA))
 }
 
